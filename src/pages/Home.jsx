@@ -1,0 +1,37 @@
+import React from 'react'
+import Main from '../components/Home/Main'
+import Home2 from '../components/Home/Home2'
+import Home3 from '../components/Home/Home3'
+import Home4 from '../components/Home/Home4'
+import Home5 from '../components/Home/Home5'
+import Homecontact from '../components/Home/Homecontact'
+import Homelast from '../components/Home/Homelast'
+import { useEffect } from 'react'
+
+
+const Home = ({getScroll}) => {
+
+  useEffect(() => {
+    const scroll = getScroll();
+    if (scroll ) {
+      const timer = setTimeout(() => {
+        scroll.update();
+      }, 200);
+
+      return () => clearTimeout(timer);
+    }
+  }, [getScroll]);
+      
+  return (
+         <div className='overflow-hidden'><Main/>
+    <Home2/>
+    <Home3/>
+    <Home4/>
+    <Home5/>
+    <Homecontact/>
+    <Homelast/>     </div >
+    
+  )
+}
+
+export default Home
