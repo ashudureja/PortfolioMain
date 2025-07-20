@@ -96,16 +96,14 @@ const Project = () => {
     const maxRows = Math.min(articleDistribution.length, articles.length);
 
     for (let rowIndex = 0; rowIndex < maxRows; rowIndex++) {
-      const rowLayout = [null, null, null];
-
-      for (let colIndex = 0; colIndex < 3; colIndex++) {
+      const rowLayout = [0, 1, 2].map(colIndex => {
         if (articleDistribution[rowIndex][colIndex] === 1 && articleIndex < articles.length) {
-          rowLayout[colIndex] = articles[articleIndex];
+          const article = articles[articleIndex];
           articleIndex++;
-          break;
+          return article;
         }
-      }
-
+        return null;
+      });
       layout.push(rowLayout);
     }
 
