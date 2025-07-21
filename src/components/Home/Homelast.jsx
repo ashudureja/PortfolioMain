@@ -1,4 +1,5 @@
 import React from 'react'
+import Bracket from '../../Animations/Bracket'
 
 const Homelast = () => {
   return (
@@ -15,13 +16,13 @@ const Homelast = () => {
                        text-black/65 font-extralight'>+</div>
       </div>
       
-      <div className='w-full text-center font-[figtree] 
+      
+
+      <Bracket text="NEXT" className='w-full items-center justify-center font-[figtree] 
                      text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] 
                      leading-tight sm:leading-[44px] md:leading-[54px] lg:leading-[64px] xl:leading-[74px] 
                      text-[#000] 
-                     px-4'>
-        (NEXT)
-      </div>
+                     px-4' ></Bracket>
       
       <div className='flex justify-between items-end'>
         <div className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl 

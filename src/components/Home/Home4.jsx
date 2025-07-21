@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import Bracket from '../../Animations/Bracket'
 
 const Home4 = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
@@ -59,8 +60,9 @@ const Home4 = () => {
   }, [hoveredProject])
 
   return (
-    <div className='min-h-screen text-[#EFEFEF] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[40px] bg-[#111111] w-full relative overflow-x-hidden'>
-      <div className='font-[figtree] text-sm sm:text-base md:text-[16px] pt-4 sm:pt-6 md:pt-8'>(SELECTED PROJECTS)</div>
+    <div data-navbar-theme="dark" className='min-h-screen text-[#EFEFEF] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[40px] bg-[#111111] w-full relative overflow-x-hidden'>
+      {/* <div className='font-[figtree] text-sm sm:text-base md:text-[16px] pt-4 sm:pt-6 md:pt-8'>(SELECTED PROJECTS)</div> */}
+      <Bracket text="SELECTED PROJECTS" className='font-[figtree] text-sm sm:text-base md:text-[16px] pt-4 sm:pt-6 md:pt-8'></Bracket>
       
       {/* Desktop and Tablet Layout */}
       <div className='hidden md:grid md:grid-cols-2 gap-2 mt-4'>
@@ -188,7 +190,10 @@ const Home4 = () => {
         </div>
       )}
 
-      <div className='font-[figtree] text-sm sm:text-base md:text-[16px] w-full text-center mt-8 sm:mt-10 md:mt-14 pb-8 sm:pb-10 md:pb-12'>(ALL PROJECTS)</div>
+      {/* <div className='font-[figtree] text-sm sm:text-base md:text-[16px] w-full text-center mt-8 sm:mt-10 md:mt-14 pb-8 sm:pb-10 md:pb-12'>(ALL PROJECTS)</div> */}
+    
+        <Bracket text="ALL PROJECTS" className="font-[figtree] items-center justify-center text-sm sm:text-base md:text-[16px] w-full text-center mt-8 sm:mt-10 md:mt-14 pb-8 sm:pb-10 md:pb-12"></Bracket>
+  
     </div>
   )
 }

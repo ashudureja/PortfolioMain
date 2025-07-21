@@ -91,7 +91,7 @@ const About4 = () => {
                   <div className="w-full sm:w-[120px] font-medium opacity-80">{item.label}</div>
                   <div className="break-words">{item.value}</div>
                 </div>
-                <div className="h-[0.1px] w-full bg-white"></div>
+                <div className="h-[1px] w-full bg-white"></div>
               </div>
             ))}
           </div>
@@ -134,7 +134,7 @@ const About4 = () => {
                                leading-relaxed sm:leading-[27px] font-[lato]">
                   {edu.details}
                 </div>
-                <div className="h-[0.1px] w-full bg-white mt-6 sm:mt-8"></div>
+                <div className="h-[1px] w-full bg-white mt-6 sm:mt-8"></div>
               </div>
             ))}
           </div>
@@ -170,7 +170,7 @@ const About4 = () => {
                                text-justify sm:text-left">
                   {text}
                 </div>
-                <div className="h-[0.1px] w-full bg-white mt-6 sm:mt-8"></div>
+                <div className="h-[1px] w-full bg-white mt-6 sm:mt-8"></div>
               </div>
             ))}
           </div>
