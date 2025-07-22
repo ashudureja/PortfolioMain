@@ -9,7 +9,7 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
-export default function Copy({ children, animateOnScroll = true, delay = 0,duration=1 ,y=0,marker=false, triggerStart = 'top 75%',}) {
+export default function Copy({ children, animateOnScroll = true, delay = 0,duration=1.2 ,y=0,marker=false, triggerStart = 'top 73%',}) {
   const containerRef = useRef(null);
   const elementRefs = useRef([]);
   const splitRefs = useRef([]);

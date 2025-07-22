@@ -1,4 +1,6 @@
 import React from 'react'
+import { circOut, motion } from "framer-motion";
+
 
 const About5 = () => {
   const tools = [
@@ -19,14 +21,25 @@ const About5 = () => {
   ]
 
   return (
-    <div className='bg-[#efefef] h-screen w-full'>
+    <div className='bg-[#efefef]  w-full pt-5'>
       {tools.map((tool, index) => (
-        <div key={index} className='items-center justify-center p-5 w-full border-b-1 h-20 flex'>
-          <div className='flex justify-between w-full items-center text-[24px] leading-[24px] font-[lato] text-[#000]'>
+        <div key={index} className=' w-full  h-20 flex flex-col'>
+          <div className='flex px-2 md:px-5 justify-between w-full items-center text-[16px] md:text-[24px]  font-[lato] text-[#000]'>
             <div className='w-35 '>{tool.name}</div>
-            <div className='-ml-14'>{tool.logo}</div>
+            <div className='-ml-24'>{tool.logo}</div>
             <div>{tool.proficiency}</div>
           </div>
+          <motion.div
+                  className="h-[1.5px] bg-black mt-3 rounded-full "
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "100%" }}
+                  transition={{
+                    duration: 1,
+                    delay: 0.1,
+                    ease: circOut,
+                  }}
+                  viewport={{ once: true }}
+                />
         </div>
       ))}
     </div>

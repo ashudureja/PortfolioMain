@@ -9,6 +9,7 @@ import Abou7 from '../components/About/Abou7'
 import Home3 from '../components/Home/Home3'
 import Homecontact from '../components/Home/Homecontact'
 import Homelast from '../components/Home/Homelast'
+import Transition from '../Animations/Transition'
 // import { ReactLenis, useLenis } from "lenis/react";
 
 

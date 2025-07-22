@@ -162,7 +162,7 @@ const Project = () => {
                     {/* Article image with hover effect */}
                     <div className="w-full mb-2 overflow-hidden  lg:aspect-[16/15] aspect-[4/3] relative">
                       <ParallaxImage
-                        speed={0.15}
+                        speed={0.3}
                         src={article.image}
                         alt={article.title}
                         className="w-full h-full object-cover "

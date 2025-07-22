@@ -7,21 +7,11 @@ import Home5 from '../components/Home/Home5'
 import Homecontact from '../components/Home/Homecontact'
 import Homelast from '../components/Home/Homelast'
 import { useEffect } from 'react'
+import Transition from '../Animations/Transition'
 
+const Home = () => {
 
-const Home = ({getScroll}) => {
-
-  useEffect(() => {
-    const scroll = getScroll();
-    if (scroll ) {
-      const timer = setTimeout(() => {
-        scroll.update();
-      }, 200);
-
-      return () => clearTimeout(timer);
-    }
-  }, [getScroll]);
-      
+ 
   return (
          <div className='overflow-hidden'><Main/>
     <Home2/>

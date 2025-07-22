@@ -24,7 +24,7 @@ const Bracket = ({ text, className }) => {
           initial={{ y: '100%' }}
           whileInView={{ y: 0 }}
           viewport={{ once: true }} // Ensures the animation runs only once
-          transition={{ delay: 0.5, duration: 0.5, ease: 'easeOut' }}
+          transition={{ delay: 0.4, duration: 0.5, ease: 'easeOut' }}
           style={{ display: 'inline-block' }} // inline-block is necessary for the ref to measure width
         >
           {text}

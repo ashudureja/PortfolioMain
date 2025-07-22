@@ -43,7 +43,7 @@ const Navbar = () => {
             ))}
           </div>
           <div className='w-10 text-end'>
-            <p className='font-medium'>{scrollPercent}%</p>
+            {/* <p className='font-medium'>{scrollPercent}%</p> */}
           </div>
         </div>
       </div>

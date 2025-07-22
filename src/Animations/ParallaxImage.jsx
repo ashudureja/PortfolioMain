@@ -3,7 +3,7 @@ import React, { useRef, useEffect, useState } from "react";
 
 const lerp = (start, end, factor) => start + (end - start) * factor;
 
-const ParallaxImage = ({ src, alt, speed = 0.3, className }) => {
+const ParallaxImage = ({ src, alt, speed = 0.4, className }) => {
   const imageRef = useRef(null);
   const bounds = useRef(null);
   const currentTranslateY = useRef(0);
@@ -65,7 +65,7 @@ const ParallaxImage = ({ src, alt, speed = 0.3, className }) => {
         if (
           Math.abs(currentTranslateY.current - targetTranslateY.current) > 0.01
         ) {
-          imageRef.current.style.transform = `translateY(${currentTranslateY.current}px) scale(1.2)`;
+          imageRef.current.style.transform = `translateY(${currentTranslateY.current}px) scale(1.3)`;
         }
       }
       rafId.current = requestAnimationFrame(animate);

@@ -1,5 +1,9 @@
 import React from 'react'
 import ParallaxImage from '../../Animations/ParallaxImage'
+import Line from '../../Animations/Line';
+import { circOut, motion } from "framer-motion";
+import Bracket from '../../Animations/Bracket';
+import Copy from '../../Animations/Copy';
 
 const About4 = () => {
   const details = [
@@ -67,7 +71,8 @@ const About4 = () => {
         
         {/* Right Column */}
         <div className="flex w-full lg:flex-[66%] flex-col gap-8 sm:gap-10 md:gap-12">
-          <div className="font-[lato] uppercase font-extralight 
+          <Copy>
+            <div className="font-[lato] whitespace-nowrap uppercase font-extralight 
                          text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] 
                          leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] xl:leading-[45px]">
             I entered the web industry in 2020,<br className="hidden sm:block" /> 
@@ -79,7 +84,8 @@ const About4 = () => {
             <span className="sm:hidden"> </span>in design and actively create various things daily.
             <br className="hidden sm:block" /> <span className="sm:hidden"> </span>
             My motto is, "Stagnation is regression."
-          </div>
+          </div> 
+          </Copy>
           
           {/* Details Section */}
           <div className="flex flex-col gap-3 sm:gap-4">
@@ -91,7 +97,17 @@ const About4 = () => {
                   <div className="w-full sm:w-[120px] font-medium opacity-80">{item.label}</div>
                   <div className="break-words">{item.value}</div>
                 </div>
-                <div className="h-[1px] w-full bg-white"></div>
+                <motion.div
+        className="h-[1px] bg-gray-200 rounded-full "
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%" }}
+        transition={{
+          duration: 1,
+          delay: 0.1,
+          ease: circOut,
+        }}
+        viewport={{ once: true }}
+      />
               </div>
             ))}
           </div>
@@ -101,12 +117,15 @@ const About4 = () => {
       {/* Education Section */}
       <div className="flex flex-col lg:flex-row text-[#efefef] gap-8 sm:gap-10 md:gap-12 lg:gap-14">
         {/* Left Column */}
-        <div className="w-full lg:flex-[34%] font-[figtree] 
+        {/* <div className="w-full lg:flex-[34%] font-[figtree] 
                        text-sm sm:text-base lg:text-[16px] 
                        leading-tight sm:leading-[19px]">
           (EDUCATION)
-        </div>
-        
+        </div> */}
+
+<Bracket text="EDUCATION" className="w-full lg:flex-[34%] font-[figtree] 
+                       text-sm sm:text-base lg:text-[16px] 
+                       leading-tight sm:leading-[19px]"></Bracket>        
         {/* Right Column */}
         <div className="flex w-full lg:flex-[66%] flex-col text-[#efefef] gap-8 sm:gap-10 md:gap-12">
           {/* Education Details */}
@@ -117,11 +136,11 @@ const About4 = () => {
                                leading-tight sm:leading-[16px] font-[lato]">
                   ({index + 1})
                 </div>
-                <div className="font-semibold mb-3 sm:mb-4 
+               <Copy> <div className="font-semibold whitespace-nowrap mb-3 sm:mb-4 
                                text-lg sm:text-xl md:text-2xl lg:text-[24px] 
                                uppercase leading-tight sm:leading-[28px] font-[lato]">
                   {edu.degree}
-                </div>
+                </div></Copy>
                 <div className="text-sm sm:text-base lg:text-[17px] 
                                leading-relaxed sm:leading-[27px] font-[lato] mb-2">
                   {edu.institution}
@@ -134,7 +153,18 @@ const About4 = () => {
                                leading-relaxed sm:leading-[27px] font-[lato]">
                   {edu.details}
                 </div>
-                <div className="h-[1px] w-full bg-white mt-6 sm:mt-8"></div>
+                {/* <div className="h-[1px] w-full bg-white mt-6 sm:mt-8"></div> */}
+                <motion.div
+        className="h-[1px] bg-gray-200 rounded-full mt-6 sm:mt-8"
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%" }}
+        transition={{
+          duration: 1,
+          delay: 0.1,
+          ease: circOut,
+        }}
+        viewport={{ once: true }}
+      />
               </div>
             ))}
           </div>
@@ -144,11 +174,14 @@ const About4 = () => {
       {/* Values Section */}
       <div className="flex flex-col lg:flex-row text-[#efefef] gap-8 sm:gap-10 md:gap-12 lg:gap-14">
         {/* Left Column */}
-        <div className="w-full lg:flex-[34%] font-[figtree] 
+        {/* <div className="w-full lg:flex-[34%] font-[figtree] 
                        text-sm sm:text-base lg:text-[16px] 
                        leading-tight sm:leading-[19px]">
           (VALUES)
-        </div>
+        </div> */}
+        <Bracket text="VALUES"  className="w-full lg:flex-[34%] font-[figtree] 
+                       text-sm sm:text-base lg:text-[16px] 
+                       leading-tight sm:leading-[19px]" />
         
         {/* Right Column */}
         <div className="flex w-full lg:flex-[66%] flex-col text-[#efefef] gap-8 sm:gap-10 md:gap-12">
@@ -160,17 +193,28 @@ const About4 = () => {
                                leading-tight sm:leading-[16px] font-[lato]">
                   ({number})
                 </div>
-                <div className="font-semibold mb-3 sm:mb-4 
+                <Copy><div className="font-semibold whitespace-nowrap mb-3 sm:mb-4 
                                text-lg sm:text-xl md:text-2xl lg:text-[24px] 
                                leading-tight sm:leading-[28px] font-[lato]">
                   {title}
-                </div>
+                </div></Copy>
+                
                 <div className="text-sm sm:text-base lg:text-[17px] 
                                leading-relaxed sm:leading-[27px] font-[lato] 
                                text-justify sm:text-left">
                   {text}
                 </div>
-                <div className="h-[1px] w-full bg-white mt-6 sm:mt-8"></div>
+                <motion.div
+        className="h-[1px] bg-gray-200 rounded-full mt-6 sm:mt-8"
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%" }}
+        transition={{
+          duration: 1,
+          delay: 0.1,
+          ease: circOut,
+        }}
+        viewport={{ once: true }}
+      />
               </div>
             ))}
           </div>

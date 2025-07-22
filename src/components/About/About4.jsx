@@ -1,5 +1,6 @@
 import React from 'react'
 import ParallaxImage from '../../Animations/ParallaxImage'
+import Bracket from '../../Animations/Bracket'
 
 const About4 = () => {
   return (
@@ -32,12 +33,16 @@ const About4 = () => {
       </div>
       
       {/* Center Section */}
-      <div className='uppercase text-center z-0 text-white font-[lato] 
+      {/* <div className='uppercase text-center z-0 text-white font-[lato] 
                      text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] 
                      leading-tight sm:leading-[36px] md:leading-[48px] lg:leading-[58px] xl:leading-[62px] 
                      px-4'>
         (technologies)
-      </div>
+      </div> */}
+      <Bracket text="TECHNOLOGIES" className='uppercase items-center justify-center text-center z-0 text-white font-[lato] 
+                     text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] 
+                     leading-tight sm:leading-[36px] md:leading-[48px] lg:leading-[58px] xl:leading-[62px] 
+                     px-4' ></Bracket>
       
       {/* Bottom Section */}
       <div className='justify-between flex items-center text-white'>

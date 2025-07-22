@@ -19,7 +19,7 @@ const Homecontact = () => {
                       bg-gray-300 
                       mx-auto'>
         
-      <Copy>
+      {/* <Copy> */}
           <div className='uppercase font-[figtree] 
                        text-sm sm:text-base md:text-lg lg:text-xl 
                        whitespace-nowrap
@@ -31,7 +31,7 @@ const Homecontact = () => {
                        px-2 sm:px-4'>
           Open to full-time roles, freelance <br/> projects , and creative collaborations.
         </div>
-      </Copy>
+      {/* </Copy> */}
         
         <div className="flex gap-3 sm:gap-4 flex-wrap justify-center">
           <button className="rounded-full p-2 sm:p-2.5 hover:bg-gray-100 transition">
@@ -48,17 +48,17 @@ const Homecontact = () => {
           </button>
         </div>
         
-        {/* <div className='font-[figtree] 
+        <div className='font-[figtree] 
                        text-base sm:text-lg md:text-xl 
                       
                        text-center'>
           (CONTACT ME)
-        </div> */}
+        </div>
 
-        <Bracket text="CONTACT ME"  className='font-[figtree] 
+        {/* <Bracket text="CONTACT ME"  className='font-[figtree] 
                        text-base sm:text-lg md:text-xl 
                       
-                       text-center'></Bracket>
+                       text-center'></Bracket> */}
         
       </div>
     </div>
