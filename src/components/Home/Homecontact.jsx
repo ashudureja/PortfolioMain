@@ -12,8 +12,8 @@ const Homecontact = () => {
       </div>
       <div className='absolute z-[-1] bg-black/35 inset-0'></div>
       
-      <div className='w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 
-                      h-auto min-h-[400px] sm:min-h-[450px] md:min-h-[500px]
+      <div className='w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg
+                      h-auto min-h-[400px] sm:min-h-[450px] md:min-h-[520px]
                       flex flex-col items-center justify-between 
                       p-4 sm:p-6 md:p-8 
                       bg-gray-300 

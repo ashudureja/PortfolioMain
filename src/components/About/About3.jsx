@@ -8,7 +8,7 @@ import Copy from '../../Animations/Copy';
 const About4 = () => {
   const details = [
     { label: "NAME", value: "ASHUTOSH DUREJA" },
-    { label: "AGE", value: "26" },
+    { label: "AGE", value: "27" },
     { label: "BASED", value: "SYDNEY" },
     { label: "ROLE", value: "FRONTEND DEVELOPER" },
   ];
@@ -30,22 +30,23 @@ const About4 = () => {
   ];
 
   const values = [
-    {
-      number: 1,
-      title: "KEEP LEARNING",
-      text: `Since I started this job in 2020 and up until now (2025), I've felt significant changes in technology trends and the rise of AI. As you know, this is an industry where trends change quickly, so I believe that continuing to learn is essential. I always make sure to absorb new information and apply it appropriately in my projects.`
-    },
-    {
-      number: 2,
-      title: "VALUE COMMUNICATION",
-      text: `Contrary to the common perception that 'engineers don't need to be particularly good at communication,' the reality is quite different. We work closely with many people, including directors and designers, to accomplish our tasks. Instead of working alone, we work as a team and place a high value on communication.`
-    },
-    {
-      number: 3,
-      title: "ENJOY WORK",
-      text: `Above all, I believe it is important to enjoy one's work. By 'enjoying,' I don't mean 'playing,' but rather maintaining a mindset that finds pleasure in creating. I think that enjoying the work often has a very positive effect on projects.`
-    }
-  ];
+  {
+    number: 1,
+    title: "KEEP LEARNING",
+    text: `As someone entering the tech industry, I know that continuous learning is key. I'm constantly exploring new tools, frameworks, and trends to stay ahead. Whether it's improving my React skills or diving into design systems, I'm always looking to grow and improve my craft.`
+  },
+  {
+    number: 2,
+    title: "VALUE COMMUNICATION",
+    text: `Even as a fresher, I understand that great products are built through collaboration. I'm always open to feedback and believe that clear, respectful communication leads to better teamwork and better outcomes. I'm eager to work in environments where ideas can be shared freely.`
+  },
+  {
+    number: 3,
+    title: "ENJOY CREATING",
+    text: `I genuinely enjoy building and designing things for the web. For me, it's exciting to turn ideas into something interactive and meaningful. That passion keeps me motivated, especially when solving challenges or learning something new.`
+  }
+];
+
 
   return (
     <div className="min-h-screen flex flex-col 
@@ -71,21 +72,24 @@ const About4 = () => {
         
         {/* Right Column */}
         <div className="flex w-full lg:flex-[66%] flex-col gap-8 sm:gap-10 md:gap-12">
-          <Copy>
-            <div className="font-[lato] whitespace-nowrap uppercase font-extralight 
-                         text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] 
-                         leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] xl:leading-[45px]">
-            I entered the web industry in 2020,<br className="hidden sm:block" /> 
-            <span className="sm:hidden"> </span>studying various technologies on my own.
-            <br className="hidden sm:block" /> <span className="sm:hidden"> </span>
-            I'm currently working as a frontend engineer.
-            <br className="hidden sm:block" /> <span className="sm:hidden"> </span>
-            Besides implementation, I have an interest<br className="hidden sm:block" /> 
-            <span className="sm:hidden"> </span>in design and actively create various things daily.
-            <br className="hidden sm:block" /> <span className="sm:hidden"> </span>
-            My motto is, "Stagnation is regression."
-          </div> 
-          </Copy>
+         <Copy>
+  <div className="font-[lato] whitespace-nowrap uppercase font-extralight 
+                text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] 
+                leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] xl:leading-[45px]">
+    I’m Ashutosh Dureja, a 27-year-old developer<br className="hidden sm:block" /> 
+    <span className="sm:hidden"> </span>and designer based in Sydney.Currently
+    <br className="hidden sm:block" /> <span className="sm:hidden"> </span>
+     pursuing a Master’s in IT. I build responsive
+    <br className="hidden sm:block" /> <span className="sm:hidden"> </span>
+     sites with smooth and elegant interactions. <br className="hidden sm:block" /> 
+    <span className="sm:hidden"> </span>  I love  using React, Tailwind CSS,GSAP and
+    <br className="hidden sm:block" /> <span className="sm:hidden"> </span>
+   Framer Motion daily.<br className="hidden sm:block" /> 
+    <span className="sm:hidden"> </span>
+  </div> 
+</Copy>
+
+
           
           {/* Details Section */}
           <div className="flex flex-col gap-3 sm:gap-4">

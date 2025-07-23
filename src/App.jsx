@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Project from './pages/editorial/page';
 import Navbar from './components/Home/Navbar';
+import Contact from './pages/Contact';
 
 const App = () => {
   
@@ -22,7 +23,7 @@ const App = () => {
   const pageVariants = {
     initial: { opacity: 0, },
     animate: { opacity: 1, transition: { duration: 0.5, ease: 'circOut' } },
-    exit: { opacity: 0,  transition: { duration: 0.4, ease: 'easeIn' } }
+    exit: { opacity: 0,  transition: { duration: 0, ease: 'easeIn' } }
   };
 
   const MotionWrapper = ({ children }) => (
@@ -45,6 +46,7 @@ const App = () => {
           <Route path="/" element={<MotionWrapper><Home /></MotionWrapper>} />
           <Route path="/about" element={<MotionWrapper><About /></MotionWrapper>} />
           <Route path="/projects" element={<MotionWrapper><Project /></MotionWrapper>} />
+          <Route path="/contact" element={<MotionWrapper><Contact /></MotionWrapper>} />
         </Routes>
       </AnimatePresence>
     </>

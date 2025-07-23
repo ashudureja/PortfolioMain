@@ -3,7 +3,7 @@ import React, { useRef, useEffect, useState } from "react";
 
 const lerp = (start, end, factor) => start + (end - start) * factor;
 
-const ParallaxImage = ({ src, alt, speed = 0.4, className }) => {
+const ParallaxImage = ({ src, alt, speed = 0.45, className }) => {
   const imageRef = useRef(null);
   const bounds = useRef(null);
   const currentTranslateY = useRef(0);

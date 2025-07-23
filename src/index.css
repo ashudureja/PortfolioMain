@@ -72,14 +72,14 @@ a {
 
 
 
-button {
+/* button {
   position: relative;
   border: none;
   outline: none;
   box-shadow: none;
   padding: 0.5em 1em 0.75em 1em;
   background-color: var(--color-accent) !important;
-}
+} */
 
 button a {
   color: var(--color-dark);

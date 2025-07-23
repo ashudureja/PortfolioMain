@@ -16,7 +16,7 @@ const Home2 = () => {
 
       {/* Top section */}
       <div className="justify-between flex items-center text-white">
-        <span className="!text-white text-[20px] sm:text-[25px] md:text-[30px] font-extralight">
+        <span className="!text-white  text-[20px] sm:text-[25px] md:text-[30px] font-extralight">
           +
         </span>
         <div className="font-[lato] text-xs sm:text-sm md:text-base lg:text-lg text-center">

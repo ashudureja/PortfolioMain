@@ -6,6 +6,7 @@ import Homecontact from "../../components/Home/Homecontact";
 import Homelast from "../../components/Home/Homelast";
 import About from "../About";
 import About1 from "../../components/About/About1";
+import Project1 from "../../components/Projects/Project1";
 
 const Project = () => {
   const containerRef = useRef(null);
@@ -123,12 +124,7 @@ const Project = () => {
 
   return (
    <>
-   <div className="h-[60vh] flex justify-center items-center bg-[#efefef]">
-     <div className="w-full text-center font-[figtree] text-[88px] leading-[101px] text-[#000]">
-        (PROJECTS)
-      </div>
-
-   </div>
+   <Project1/>
     <div 
      
       className="relative w-full bg-[#efefef] px-4  overflow-hidden"
@@ -137,7 +133,7 @@ const Project = () => {
      
       
       {/* Articles grid */}
-      <div className="flex flex-col gap-24">
+      <div className="flex flex-col gap-24 pt-8">
         {articleLayout.map((row, rowIndex) => (
           <div 
             className="article-row relative w-full flex gap-4 lg:flex-row flex-col"

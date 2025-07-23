@@ -10,23 +10,34 @@ const Homelast = () => {
                     bg-[#efefef]">
       
       <div className='flex justify-between items-start'>
-        <div className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-                       text-black/65 font-extralight'>+</div>
-        <div className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-                       text-black/65 font-extralight'>+</div>
+         <div className="w-[1.5rem] h-[1.5rem] relative ">
+  <span className="absolute top-1/2 left-0 w-full h-px bg-black -translate-y-1/2"></span>
+  <span className="absolute top-0 left-1/2 h-full w-px bg-black -translate-x-1/2"></span>
+</div>
+        <div className="w-[1.5rem] h-[1.5rem] relative ">
+  <span className="absolute top-1/2 left-0 w-full h-px bg-black -translate-y-1/2"></span>
+  <span className="absolute top-0 left-1/2 h-full w-px bg-black -translate-x-1/2"></span>
+</div>
       </div>
       
       
 
-      <Bracket text="NEXT" className='w-full items-center justify-center font-[figtree] 
-                     text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] 
-                     leading-tight sm:leading-[44px] md:leading-[54px] lg:leading-[64px] xl:leading-[74px] 
-                     text-[#000] 
-                     px-4' ></Bracket>
+ <div className='flex flex-col relative items-center justify-center'>
+  <div className="relative group cursor-pointer inline-block">
+    <Bracket text="NEXT" className='items-center justify-center font-[figtree]
+      text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px]
+      leading-tight sm:leading-[44px] md:leading-[54px] lg:leading-[64px] xl:leading-[74px]
+      text-[#000]
+      px-4' />
+    <span className="absolute bottom-0 left-4 w-0 h-px bg-black transition-all duration-500 ease-out group-hover:w-[calc(100%-2rem)]"></span>
+  </div>
+</div>
       
       <div className='flex justify-between items-end'>
-        <div className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-                       text-black/65 font-extralight'>+</div>
+          <div className="w-[1.5rem] h-[1.5rem] relative ">
+  <span className="absolute top-1/2 left-0 w-full h-px bg-black -translate-y-1/2"></span>
+  <span className="absolute top-0 left-1/2 h-full w-px bg-black -translate-x-1/2"></span>
+</div>
         
         <div className='font-[lato] 
                        leading-tight sm:leading-[10px] md:leading-[12px] 
@@ -38,8 +49,10 @@ const Homelast = () => {
           ©2025 ASHU DUREJA. All rights reserved.
         </div>
         
-        <div className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-                       text-black/65 font-extralight'>+</div>
+         <div className="w-[1.5rem] h-[1.5rem] relative ">
+  <span className="absolute top-1/2 left-0 w-full h-px bg-black -translate-y-1/2"></span>
+  <span className="absolute top-0 left-1/2 h-full w-px bg-black -translate-x-1/2"></span>
+</div>
       </div>
       
     </div>
