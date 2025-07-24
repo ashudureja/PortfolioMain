@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ParallaxImage from "../../Animations/ParallaxImage";
@@ -89,8 +88,6 @@ const Project = () => {
     [1, 0, 0],
   ];
 
-  
-
   const getArticleLayout = () => {
     let articleIndex = 0;
     const layout = [];
@@ -126,26 +123,22 @@ const Project = () => {
    <>
    <Project1/>
     <div 
-     
-      className="relative w-full bg-[#efefef] px-4  overflow-hidden"
+      className="relative w-full bg-[#efefef] px-4 sm:px-6 lg:px-8 xl:px-12 overflow-hidden"
     >
-      {/* Top spacing */}
-     
-      
       {/* Articles grid */}
-      <div className="flex flex-col gap-24 pt-8">
+      <div className="flex flex-col gap-8 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24 pt-6 sm:pt-8">
         {articleLayout.map((row, rowIndex) => (
           <div 
-            className="article-row relative w-full flex gap-4 lg:flex-row flex-col"
+            className="article-row relative w-full flex gap-3 sm:gap-4 md:gap-6 lg:gap-8 flex-col sm:flex-col md:flex-col lg:flex-row"
             key={`row-${rowIndex}`}
           >
             {row.map((article, colIndex) => (
               <div
                 className={`
-                  flex flex-col gap-4
+                  flex flex-col gap-3 sm:gap-4
                   ${article === null ? 
                     "flex-1 hidden lg:block" : 
-                    "flex-[2] w-full"
+                    "w-full sm:w-full md:w-full lg:flex-[2]"
                   }
                 `}
                 key={`col-${rowIndex}-${colIndex}`}
@@ -155,23 +148,36 @@ const Project = () => {
                     className="w-full flex flex-col cursor-pointer group"
                     onClick={() => navigateTo(`/editorial/${generateSlug(article.title)}`)}
                   >
-                    {/* Article image with hover effect */}
-                    <div className="w-full mb-2 overflow-hidden  lg:aspect-[16/15] aspect-[4/3] relative">
+                    {/* Article image with responsive aspect ratios */}
+                    <div className="w-full mb-2 sm:mb-3 md:mb-4 overflow-hidden relative
+                      h-[36vh]
+                      sm:aspect-[16/12] 
+                      md:aspect-[16/13] 
+                      lg:aspect-[16/15] 
+                      xl:aspect-[16/15]">
                       <ParallaxImage
                         speed={0.3}
                         src={article.image}
                         alt={article.title}
                         className="w-full h-full object-cover "
                       />
-                      {/* <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div> */}
+                      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
                     </div>
                     
-                    {/* Article info */}
-                    <div className="flex justify-between items-center">
-                      <h2 className="text-lg font-medium text-black  transition-colors duration-300">
+                    {/* Article info with responsive typography */}
+                    <div className="flex justify-between items-start sm:items-center flex-col sm:flex-row gap-2 sm:gap-0">
+                      <div className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 
+                        font-medium text-black group-hover:text-gray-700 transition-colors duration-300
+                        leading-tight sm:leading-normal">
                         {article.title}
-                      </h2>
+                      </div>
                       
+                      {/* Optional: Add date/category for mobile */}
+                      <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-600 sm:hidden">
+                        <span>REACT</span>
+                        {/* <span>•</span>
+                        <span>{article.date}</span> */}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -181,11 +187,12 @@ const Project = () => {
         ))}
       </div>
       
-      {/* Bottom spacing */}
-      <div className="h-50"></div>
+      {/* Responsive bottom spacing */}
+      <div className="h-16 sm:h-24 md:h-32 lg:h-40 xl:h-50"></div>
     </div>
     <Homecontact/>
-    <Homelast/></>
+    <Homelast/>
+   </>
   );
 };
 

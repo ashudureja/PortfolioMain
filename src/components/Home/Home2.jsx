@@ -33,7 +33,7 @@ const Home2 = () => {
           (About)
         </span> */}
         <Bracket text="About" className="uppercase text-sm sm:text-base md:text-lg !font-[figtree] text-white text-center lg:text-left"></Bracket>
-        <div className="flex flex-col text-center lg:text-left max-w-4xl">
+        <div className="flex hidden sm:block flex-col text-center lg:text-left max-w-4xl">
           <Copy>
             <p className="uppercase whitespace-nowrap text-[16px] sm:text-xl md:text-2xl lg:text-[32px] leading-tight sm:leading-relaxed md:leading-[30px] font-[figtree] text-white">
               Hi, I’m Ashutosh Dureja — a frontend developer.
@@ -43,6 +43,19 @@ const Home2 = () => {
               and interactive animations.
               <br />
               Above all, I’m passionate about what I do.
+            </p>
+          </Copy>
+        </div>
+         <div className="flex block sm:hidden flex-col text-center lg:text-left max-w-4xl">
+          <Copy>
+            <p className="uppercase whitespace-nowrap text-[16px] sm:text-xl md:text-2xl lg:text-[32px] leading-tight sm:leading-relaxed md:leading-[30px] font-[figtree] text-white">
+              Hi, I’m Ashutosh Dureja — a frontend  <br />developer.
+             
+              I specialize in modern  <br /> development
+             
+              and interactive  <br /> animations.
+             
+              Above all, I’m  passionate<br />   about what  I do.
             </p>
           </Copy>
         </div>

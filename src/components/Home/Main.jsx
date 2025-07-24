@@ -12,7 +12,7 @@ const Main = () => {
             {/* <div className="tracking-[-4px] mt-20 sm:mt-25 md:mt-20  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[80px] sm:text-[120px] md:text-[150px] lg:text-[206px] leading-[0.9]">
               (ASHU)
             </div> */}
-            <Bracket text="ASHU" className="tracking-[-4px] mt-20 sm:mt-25 md:mt-20  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[80px] sm:text-[120px] md:text-[150px] lg:text-[206px] leading-[0.9]"></Bracket>
+            <Bracket text="ASHU" className="tracking-[-4px] mt-20 sm:mt-25 md:mt-20  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[80px] sm:text-[120px] md:text-[150px] lg:text-[206px] leading-[0.9] items-center justify-center md:items-start md:justify-start"></Bracket>
           </div>
           
           <div className="flex flex-col md:flex-row items-start gap-6 md:items-center mb-7 md:gap-40 mt-10 md:mt-0">

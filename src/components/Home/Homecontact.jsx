@@ -22,7 +22,7 @@ const Homecontact = () => {
       {/* <Copy> */}
           <div className='uppercase font-[figtree] 
                        text-sm sm:text-base md:text-lg lg:text-xl 
-                       whitespace-nowrap
+                      
                        
                        leading-tight sm:leading-[18px] md:leading-[20px] 
                        text-center 
@@ -34,16 +34,16 @@ const Homecontact = () => {
       {/* </Copy> */}
         
         <div className="flex gap-3 sm:gap-4 flex-wrap justify-center">
-          <button className="rounded-full p-2 sm:p-2.5 hover:bg-gray-100 transition">
-            <Instagram size={16} className="sm:w-[18px] sm:h-[18px]" />
+          <button className="rounded-full cursor-pointer bg-gray-400 p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
+            <Instagram size={16} className="sm:w-[18px]  sm:h-[18px]" />
           </button>
-          <button className="bg-gray-700 rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transition">
+          <button className="bg-gray-400  cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
             <Facebook size={16} className="sm:w-[18px] sm:h-[18px]" />
           </button>
-          <button className="bg-gray-700 rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transition">
+          <button className="bg-gray-400 cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
             <X size={16} className="sm:w-[18px] sm:h-[18px]" />
           </button>
-          <button className="bg-gray-700 rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transition">
+          <button className="bg-gray-400 cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
             <Linkedin size={16} className="sm:w-[18px] sm:h-[18px]" />
           </button>
         </div>

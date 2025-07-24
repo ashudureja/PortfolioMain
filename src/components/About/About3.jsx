@@ -73,8 +73,8 @@ const About4 = () => {
         {/* Right Column */}
         <div className="flex w-full lg:flex-[66%] flex-col gap-8 sm:gap-10 md:gap-12">
          <Copy>
-  <div className="font-[lato] whitespace-nowrap uppercase font-extralight 
-                text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] 
+  <div className="font-[lato] md:block hidden whitespace-nowrap uppercase font-extralight 
+                text-[16px] sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] 
                 leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] xl:leading-[45px]">
     I’m Ashutosh Dureja, a 27-year-old developer<br className="hidden sm:block" /> 
     <span className="sm:hidden"> </span>and designer based in Sydney.Currently
@@ -86,6 +86,22 @@ const About4 = () => {
     <br className="hidden sm:block" /> <span className="sm:hidden"> </span>
    Framer Motion daily.<br className="hidden sm:block" /> 
     <span className="sm:hidden"> </span>
+  </div> 
+
+
+  <div className="font-[lato] block md:hidden whitespace-nowrap uppercase font-extralight 
+                text-[17px] sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] 
+                leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] xl:leading-[45px]">
+    I’m Ashutosh Dureja, a 27-year-old <br  />  developer
+  and designer based in <br  /> Sydney.Currently
+   
+     pursuing a Master’s <br  /> in IT. I build responsive
+  
+     sites with <br  /> smooth and elegant interactions.<br  /> 
+     I love  using React, Tailwind CSS,GSAP<br  /> and
+  
+   Framer Motion daily.
+   
   </div> 
 </Copy>
 

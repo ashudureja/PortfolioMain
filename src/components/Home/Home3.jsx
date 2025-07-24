@@ -13,16 +13,16 @@ const Home3 = () => {
       <Bracket text="TECHNOLOGY" className="font-[figtree] text-[12px] sm:text-[14px] md:text-[16px] font-light "></Bracket>
 
       {/* Main content text */}
-      <div className="flex font-[lato] uppercase text-[16px] sm:text-[22px] md:text-[28px] lg:text-[32px] leading-[1.2] sm:leading-[1.15] md:leading-[0.92] flex-col text-[#EFEFEF] items-center justify-center text-center max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[70%] xl:max-w-none">
+      <div className="flex font-[lato] uppercase text-[15px] sm:text-[22px] md:text-[28px] lg:text-[32px] leading-[1.2] sm:leading-[1.15] md:leading-[0.92] flex-col text-[#EFEFEF] items-center justify-center text-center max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[70%] xl:max-w-none">
        <Copy>
          <p className="text-[#efefef] mb-2 sm:mb-4 whitespace-nowrap">
   I am currently continuing my studies,  
   <br />
-  focusing on technologies that enhance web-based expression.
-  <br />
-  I’m skilled in React, JavaScript, Tailwind CSS, and various other tools,  
-  <br />
-  and I plan to further develop and refine these skills.
+  focusing on technologies that enhance <br /> web-based  expression.
+  
+  I’m skilled in React,<br />  JavaScript,Tailwind CSS, and various  <br/> other tools,  
+  
+  and I plan to further <br/>  develop and refine these skills.
 </p>
 
        </Copy>
