@@ -79,7 +79,7 @@ const Home4 = () => {
           />
           <div className='absolute inset-0 bg-black opacity-25 group-hover:opacity-10 transition-all duration-500'></div>
           <div className='absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
-            <div className='text-white text-lg lg:text-xl font-bold'>{projects[0].title}</div>
+            <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[0].title}</div>
           </div>
         </div>
 
@@ -96,7 +96,7 @@ const Home4 = () => {
           />
           <div className='absolute inset-0 bg-black opacity-25 group-hover:opacity-10 transition-all duration-500'></div>
           <div className='absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
-            <div className='text-white text-lg lg:text-xl font-bold'>{projects[1].title}</div>
+            <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[1].title}</div>
           </div>
         </div>
 
@@ -113,7 +113,7 @@ const Home4 = () => {
           />
           <div className='absolute inset-0 bg-black opacity-20 group-hover:opacity-10 transition-all duration-500'></div>
           <div className='absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
-            <div className='text-white text-lg lg:text-xl font-bold'>{projects[2].title}</div>
+            <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl '>{projects[2].title}</div>
           </div>
         </div>
 
@@ -130,7 +130,7 @@ const Home4 = () => {
           />
           <div className='absolute inset-0 bg-black opacity-20 group-hover:opacity-10 transition-all duration-500'></div>
           <div className='absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
-            <div className='text-white text-lg lg:text-xl font-bold'>{projects[3].title}</div>
+            <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[3].title}</div>
           </div>
         </div>
 
@@ -147,7 +147,7 @@ const Home4 = () => {
           />
           <div className='absolute inset-0 bg-black opacity-20 group-hover:opacity-10 transition-all duration-500'></div>
           <div className='absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
-            <div className='text-white text-lg lg:text-xl font-bold'>{projects[4].title}</div>
+            <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[4].title}</div>
           </div>
         </div>
       </div>
@@ -167,8 +167,8 @@ const Home4 = () => {
               className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
             />
             <div className='absolute inset-0 bg-black opacity-25 group-hover:opacity-10 transition-all duration-500'></div>
-            <div className='absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
-              <div className='text-white text-base sm:text-lg font-bold'>{project.title}</div>
+            <div className='absolute bottom-3 left-3 '>
+              <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{project.title}</div>
             </div>
           </div>
         ))}

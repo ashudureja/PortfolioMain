@@ -4,6 +4,7 @@ import Square from "../../Animations/Square";
 import Cosmo from "../../Animations/Cosmo";
 import Cube from "../../Animations/Cube";
 import Bracket from "../../Animations/Bracket";
+import Copy from "../../Animations/Copy";
 
 const Home5 = () => {
   return (
@@ -32,9 +33,11 @@ const Home5 = () => {
           {/* Web Development Section */}
           <div className="flex flex-col gap-4 sm:gap-6">
             <p>(1)</p>
-            <span className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[27.6px]">
+           <Copy>
+             <span className="text-xl whitespace-nowrap sm:text-2xl lg:text-[24px] leading-tight sm:leading-[27.6px]">
               WEB DEVELOPMENT
             </span>
+           </Copy>
             <p className="text-sm sm:text-base lg:text-[17px] font-[lato] leading-relaxed sm:leading-[27.2px]">
               I specialize in building responsive and optimized web applications
               using React.js and Tailwind CSS. My development approach
@@ -50,9 +53,11 @@ const Home5 = () => {
           {/* Web Design Section */}
           <div className="flex flex-col gap-4 sm:gap-6">
             <p>(2)</p>
-            <span className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[27.6px]">
+           <Copy>
+             <span className="text-xl whitespace-nowrap sm:text-2xl lg:text-[24px] leading-tight sm:leading-[27.6px]">
               WEB DESIGN
             </span>
+           </Copy>
             <p className="text-sm sm:text-base lg:text-[17px] font-[lato] leading-relaxed sm:leading-[27.2px]">
               I design clean, modern, and user-friendly interfaces that
               translate seamlessly across devices. With a strong foundation in
@@ -68,9 +73,11 @@ const Home5 = () => {
           {/* Web Animations Section */}
           <div className="flex flex-col gap-4 sm:gap-6">
             <p>(3)</p>
-            <span className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[27.6px]">
+            <Copy triggerStart="top 90%" >
+              <span className="text-xl whitespace-nowrap sm:text-2xl lg:text-[24px] leading-tight sm:leading-[27.6px]">
               WEB ANIMATIONS
             </span>
+            </Copy>
             <p className="text-sm sm:text-base lg:text-[17px] font-[lato] leading-relaxed sm:leading-[27.2px]">
               I create smooth, interactive web animations that enhance user
               engagement and bring interfaces to life. Using tools like Framer

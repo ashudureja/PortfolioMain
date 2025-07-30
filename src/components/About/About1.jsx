@@ -21,10 +21,10 @@ const About1 = () => {
                          ">
            I’VE BEEN LEARNING WEB DEVELOPMENT <br/> SINCE 2024.
           </div>
-        <div className="w-full hidden md:block  absolute bottom-0 
+        <div className="w-full hidden  absolute bottom-0 
                        p-4 sm:p-6 md:p-8 lg:p-10 
                        right-0 sm:right-2 md:right-3 lg:right-5 
-                       flex flex-col sm:flex-row 
+                        flex-col sm:flex-row 
                        justify-between items-center 
                        gap-4 sm:gap-0">
           

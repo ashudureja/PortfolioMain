@@ -28,7 +28,7 @@ const About = () => {
         {/* <About6/> */}
         <Abou7/>
          <Homecontact/>
-    <Homelast/>
+    <Homelast page="projects"/>
         
         
     </div>

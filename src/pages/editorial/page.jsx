@@ -150,7 +150,7 @@ const Project = () => {
                   >
                     {/* Article image with responsive aspect ratios */}
                     <div className="w-full mb-2 sm:mb-3 md:mb-4 overflow-hidden relative
-                      h-[36vh]
+                      h-[36vh] md:h-[80vh]
                       sm:aspect-[16/12] 
                       md:aspect-[16/13] 
                       lg:aspect-[16/15] 
@@ -191,7 +191,7 @@ const Project = () => {
       <div className="h-16 sm:h-24 md:h-32 lg:h-40 xl:h-50"></div>
     </div>
     <Homecontact/>
-    <Homelast/>
+    <Homelast page="contact"/>
    </>
   );
 };

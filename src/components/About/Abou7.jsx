@@ -34,7 +34,7 @@ const Abou7 = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-4 md:gap-4 items-center justify-center mt-6 md:mt-8 lg:mt-1 w-full max-w-6xl">
-        <div className="w-full max-w-[310px] md:max-w-[300px] lg:max-w-[338px] aspect-[338/408] md:mt-0 lg:mt-12">
+        <div className="w-full max-w-[310px] md:max-w-[300px] lg:max-w-[338px] aspect-[338/408] md:mt-0 lg:mt-0">
           <img
             src="./images/bb1.jpg"
             alt="Hobby activity 1"
@@ -50,7 +50,7 @@ const Abou7 = () => {
           />
         </div>
 
-        <div className="w-full max-w-[310px] md:max-w-[300px] lg:max-w-[338px] aspect-[338/408] md:mt-0 lg:mt-12">
+        <div className="w-full max-w-[310px] md:max-w-[300px] lg:max-w-[338px] aspect-[338/408] md:mt-0 lg:mt-0">
           <img
             src="./images/bb3.JPG"
             alt="Hobby activity 3"

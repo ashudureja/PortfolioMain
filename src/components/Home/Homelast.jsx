@@ -1,7 +1,8 @@
 import React from 'react'
 import Bracket from '../../Animations/Bracket'
+import { Link } from 'react-router-dom'
 
-const Homelast = () => {
+const Homelast = ({page}) => {
   return (
     <div className="h-screen w-full 
                     px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[40px] 
@@ -24,11 +25,11 @@ const Homelast = () => {
 
  <div className='flex flex-col relative items-center justify-center'>
   <div className="relative group cursor-pointer inline-block">
-    <Bracket text="NEXT" className='items-center justify-center font-[figtree]
+   <Link to={`/${page}`}> <Bracket text="NEXT" className='items-center justify-center font-[figtree]
       text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px]
       leading-tight sm:leading-[44px] md:leading-[54px] lg:leading-[64px] xl:leading-[74px]
       text-[#000]
-      px-4' />
+      px-4' /> </Link>
     <span className="absolute bottom-0 left-4 w-0 h-px bg-black transition-all duration-500 ease-out group-hover:w-[calc(100%-2rem)]"></span>
   </div>
 </div>

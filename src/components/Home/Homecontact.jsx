@@ -1,6 +1,6 @@
 import React from 'react'
 import ParallaxImage from '../../Animations/ParallaxImage'
-import { Instagram, Facebook, X, Linkedin, Youtube } from "lucide-react";
+import { Instagram, Facebook, X, Linkedin, Youtube ,Github} from "lucide-react";
 import Copy from '../../Animations/Copy';
 import Bracket from '../../Animations/Bracket';
 
@@ -34,18 +34,19 @@ const Homecontact = () => {
       {/* </Copy> */}
         
         <div className="flex gap-3 sm:gap-4 flex-wrap justify-center">
-          <button className="rounded-full cursor-pointer bg-gray-400 p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
-            <Instagram size={16} className="sm:w-[18px]  sm:h-[18px]" />
-          </button>
-          <button className="bg-gray-400  cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
-            <Facebook size={16} className="sm:w-[18px] sm:h-[18px]" />
-          </button>
-          <button className="bg-gray-400 cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
-            <X size={16} className="sm:w-[18px] sm:h-[18px]" />
-          </button>
-          <button className="bg-gray-400 cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
+           <a href="https://www.linkedin.com/in/ashutosh-dureja-919072209/" className="bg-gray-400 cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
             <Linkedin size={16} className="sm:w-[18px] sm:h-[18px]" />
-          </button>
+          </a>
+          <a href="https://www.instagram.com/ashudureja_/" className="rounded-full cursor-pointer bg-gray-400 p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
+            <Instagram size={16} className="sm:w-[18px]  sm:h-[18px]" />
+          </a>
+          <a href="https://github.com/ashudureja?tab=overview&from=2025-06-01&to=2025-06-30" className="bg-gray-400  cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
+            <Github size={16} className="sm:w-[18px] sm:h-[18px]" />
+          </a>
+          <a href="https://www.linkedin.com/in/ashutosh-dureja-919072209/" className="bg-gray-400 cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-gray-300 transform transition-colors  duration-[0.4s] ease-out">
+            <X size={16} className="sm:w-[18px] sm:h-[18px]" />
+          </a>
+         
         </div>
         
         <div className='font-[figtree] 

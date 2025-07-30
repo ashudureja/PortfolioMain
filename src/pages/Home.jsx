@@ -19,7 +19,7 @@ const Home = () => {
     <Home4/>
     <Home5/>
     <Homecontact/>
-    <Homelast/>     </div >
+    <Homelast page="about"/>     </div >
     
   )
 }
