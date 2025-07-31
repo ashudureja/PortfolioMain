@@ -10,6 +10,7 @@ const Home3 = () => {
       {/* <div className="font-[figtree] text-[12px] sm:text-[14px] md:text-[16px] font-light">
         (TECHNOLOGY)
       </div> */}
+      
       <Bracket text="TECHNOLOGY" className="font-[figtree] text-[12px] sm:text-[14px] md:text-[16px] font-light "></Bracket>
 
       {/* Main content text */}
@@ -51,6 +52,7 @@ const Home3 = () => {
           REACT/JAVASCRIPT/TAILWIND CSS/HTML5/GSAP
         </div>
       </div>
+     
     </div>
   );
 };

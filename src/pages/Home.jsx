@@ -13,7 +13,7 @@ const Home = () => {
 
  
   return (
-         <div className='overflow-hidden'><Main/>
+         <div className='overflow-hidden max-w-8xl mx-auto'><Main/>
     <Home2/>
     <Home3/>
     <Home4/>

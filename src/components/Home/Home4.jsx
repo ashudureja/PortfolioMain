@@ -9,11 +9,13 @@ const Home4 = () => {
   const animationRef = useRef(null)
 
   const projects = [
-    { id: 1, image: "./projects/p4.png", title: "Project Alpha", description: "Creative design showcase" },
-    { id: 2, image: "./projects/p2.png", title: "Project Beta", description: "Digital art collection" },
-    { id: 3, image: "./projects/p7.png", title: "Project Gamma", description: "Interactive experience" },
-    { id: 4, image: "./projects/p5.png", title: "Project Delta", description: "Brand identity system" },
-    { id: 5, image: "./projects/p1.png", title: "Project Epsilon", description: "Motion graphics reel" }
+    
+    
+    { id: 4, image: "./projects/p5.png", title: "Gradly", description: "Brand identity system" ,to:"https://ashu-screenshots-gradient.netlify.app"},
+    { id: 5, image: "./projects/p1.png", title: "Minimal Ecommerce", description: "Motion graphics reel",to:"https://ashu-ecommerce.netlify.app/" },
+    { id: 3, image: "./projects/p7.png", title: " AI Trainer", description: "Interactive experience",to:"https://ashu-ai-trainer.netlify.app" },
+    { id: 1, image: "./projects/p4.png", title: "Anime Hub", description: "Creative design showcase",to:"https://animehub12.netlify.app" },
+    { id: 2, image: "./projects/p2.png", title: "Pokedex", description: "Digital art collection",to:"https://pokedoxmaster.netlify.app" },
   ]
 
   useEffect(() => {
@@ -62,12 +64,15 @@ const Home4 = () => {
   return (
     <div data-navbar-theme="dark" className='min-h-screen text-[#EFEFEF] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[40px] bg-[#111111] w-full relative overflow-x-hidden'>
       {/* <div className='font-[figtree] text-sm sm:text-base md:text-[16px] pt-4 sm:pt-6 md:pt-8'>(SELECTED PROJECTS)</div> */}
+     
       <Bracket text="SELECTED PROJECTS" className='font-[figtree] text-sm sm:text-base md:text-[16px] pt-4 sm:pt-6 md:pt-8'></Bracket>
       
       {/* Desktop and Tablet Layout */}
       <div className='hidden md:grid md:grid-cols-2 gap-2 mt-4'>
         {/* Project 1 */}
-        <div 
+        <a 
+        href="https://ashu-screenshots-gradient.netlify.app"
+        target="_blank"
           className='h-[50vh] lg:h-[100vh] w-full relative group cursor-pointer overflow-hidden'
           onMouseEnter={() => setHoveredProject(projects[0])}
           onMouseLeave={() => setHoveredProject(null)}
@@ -78,13 +83,15 @@ const Home4 = () => {
             className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
           />
           <div className='absolute inset-0 bg-black opacity-25 group-hover:opacity-10 transition-all duration-500'></div>
-          <div className='absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
+          <div className='absolute bottom-4 left-4 transition-opacity duration-500'>
             <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[0].title}</div>
           </div>
-        </div>
+        </a>
 
         {/* Project 2 */}
-        <div 
+        <a 
+        href="https://ashu-ecommerce.netlify.app/"
+        target="_blank"
           className='h-[50vh] lg:h-[100vh] w-full relative group cursor-pointer overflow-hidden'
           onMouseEnter={() => setHoveredProject(projects[1])}
           onMouseLeave={() => setHoveredProject(null)}
@@ -95,13 +102,15 @@ const Home4 = () => {
             className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
           />
           <div className='absolute inset-0 bg-black opacity-25 group-hover:opacity-10 transition-all duration-500'></div>
-          <div className='absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
+          <div className='absolute bottom-4 left-4 transition-opacity duration-500'>
             <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[1].title}</div>
           </div>
-        </div>
+        </a>
 
         {/* Project 3 - Full width */}
-        <div 
+        <a 
+        href="https://ashu-ai-trainer.netlify.app"
+        target="_blank"
           className='col-span-2 h-[50vh] lg:h-[100vh] w-full relative group cursor-pointer overflow-hidden'
           onMouseEnter={() => setHoveredProject(projects[2])}
           onMouseLeave={() => setHoveredProject(null)}
@@ -112,13 +121,15 @@ const Home4 = () => {
             className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
           />
           <div className='absolute inset-0 bg-black opacity-20 group-hover:opacity-10 transition-all duration-500'></div>
-          <div className='absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
+          <div className='absolute bottom-4 left-4 transition-opacity duration-500'>
             <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl '>{projects[2].title}</div>
           </div>
-        </div>
+        </a>
 
         {/* Project 4 */}
-        <div 
+        <a 
+        href="https://animehub12.netlify.app"
+        target="_blank"
           className='col-span-1 h-[50vh] lg:h-[100vh] w-full relative group cursor-pointer overflow-hidden'
           onMouseEnter={() => setHoveredProject(projects[3])}
           onMouseLeave={() => setHoveredProject(null)}
@@ -129,13 +140,15 @@ const Home4 = () => {
             className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
           />
           <div className='absolute inset-0 bg-black opacity-20 group-hover:opacity-10 transition-all duration-500'></div>
-          <div className='absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
+          <div className='absolute bottom-4 left-4 transition-opacity duration-500'>
             <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[3].title}</div>
           </div>
-        </div>
+        </a>
 
         {/* Project 5 */}
-        <div 
+        <a 
+        href="https://pokedoxmaster.netlify.app"
+        target="_blank"
           className='col-span-1 h-[50vh] lg:h-[100vh] w-full relative group cursor-pointer overflow-hidden'
           onMouseEnter={() => setHoveredProject(projects[4])}
           onMouseLeave={() => setHoveredProject(null)}
@@ -146,16 +159,18 @@ const Home4 = () => {
             className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
           />
           <div className='absolute inset-0 bg-black opacity-20 group-hover:opacity-10 transition-all duration-500'></div>
-          <div className='absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
+          <div className='absolute bottom-4 left-4 transition-opacity duration-500'>
             <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[4].title}</div>
           </div>
-        </div>
+        </a>
       </div>
 
       {/* Mobile Layout - Single Column */}
       <div className='md:hidden flex flex-col gap-4 mt-4'>
         {projects.map((project, index) => (
-          <div 
+          <a 
+          href={project.to}
+          target="_blank"
             key={project.id}
             className='h-[40vh] sm:h-[50vh] w-full relative group cursor-pointer overflow-hidden'
             onMouseEnter={() => setHoveredProject(project)}
@@ -170,7 +185,7 @@ const Home4 = () => {
             <div className='absolute bottom-3 left-3 '>
               <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{project.title}</div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
 
@@ -193,7 +208,7 @@ const Home4 = () => {
       {/* <div className='font-[figtree] text-sm sm:text-base md:text-[16px] w-full text-center mt-8 sm:mt-10 md:mt-14 pb-8 sm:pb-10 md:pb-12'>(ALL PROJECTS)</div> */}
     
         <Bracket text="ALL PROJECTS" className="font-[figtree] items-center justify-center text-sm sm:text-base md:text-[16px] w-full text-center mt-8 sm:mt-10 md:mt-14 pb-8 sm:pb-10 md:pb-12"></Bracket>
-  
+ 
     </div>
   )
 }

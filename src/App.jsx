@@ -8,6 +8,7 @@ import About from './pages/About';
 import Project from './pages/editorial/page';
 import Navbar from './components/Home/Navbar';
 import Contact from './pages/Contact';
+import Contact2 from './pages/Contact2';
 
 const App = () => {
   

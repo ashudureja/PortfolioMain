@@ -12,6 +12,8 @@ const Home2 = () => {
       <div className="inset-0 absolute z-[-10]">
         <ParallaxImage speed={0.4} className="" src="./images/aboutbg3.png"></ParallaxImage>
       </div>
+      
+      
       <div className="absolute z-[-1] bg-black/35 inset-0"></div>
 
       {/* Top section */}
@@ -73,6 +75,7 @@ const Home2 = () => {
           +
         </span>
       </div>
+      
     </div>
   );
 };

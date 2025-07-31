@@ -5,7 +5,7 @@ import Bracket from "../../Animations/Bracket";
 const Main = () => {
   return (
     <div data-navbar-theme="light" className="min-h-screen w-full bg-[#efefef] px-4 md:px-0 md:pl-[14px]">
-      <div className="flex flex-col md:grid md:grid-cols-2">
+      <div className="flex flex-col md:grid md:grid-cols-2 max-w-8xl mx-auto">
         {/* Left Column - Content */}
         <div className="md:col-span-1 flex flex-col justify-between  md:pt-0">
           <div>

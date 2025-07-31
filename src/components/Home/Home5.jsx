@@ -9,6 +9,7 @@ import Copy from "../../Animations/Copy";
 const Home5 = () => {
   return (
     <div data-navbar-theme="dark" className="min-h-screen w-full text-[#EFEFEF] bg-[#111111] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-20 sm:pt-24 md:pt-32 lg:pt-40">
+     <div className="max-w-8xl mx-auto">
       <motion.div
         className="h-[1px] bg-gray-200 rounded-full"
         initial={{ width: 0 }}
@@ -73,7 +74,7 @@ const Home5 = () => {
           {/* Web Animations Section */}
           <div className="flex flex-col gap-4 sm:gap-6">
             <p>(3)</p>
-            <Copy triggerStart="top 90%" >
+            <Copy triggerStart="top 80%" >
               <span className="text-xl whitespace-nowrap sm:text-2xl lg:text-[24px] leading-tight sm:leading-[27.6px]">
               WEB ANIMATIONS
             </span>
@@ -93,6 +94,7 @@ const Home5 = () => {
           {/* Bottom spacer */}
           <div className="w-full h-20 sm:h-32 lg:h-40 bg-[#111111]"></div>
         </div>
+      </div>
       </div>
     </div>
   );
