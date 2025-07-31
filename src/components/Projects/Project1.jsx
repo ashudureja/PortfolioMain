@@ -3,24 +3,20 @@ import Bracket from "../../Animations/Bracket";
 
 const Project1 = () => {
   return (
-    <div className="bg-[#efefef] w-full h-[30vh] md:h-[60vh] 
+    <div className="bg-[#efefef] w-full h-[20vh] md:h-[40vh] 
                     px-2 sm:px-6 md:px-8 lg:px-10 
                     relative flex items-center justify-center">
       
       <div className="w-full mt-8  sm:mt-8 md:mt-10">
         
-        <Bracket text="PROJECTS" className="w-full items-center justify-center font-[figtree] 
-                       text-[52px] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[88px] 
-                       leading-tight sm:leading-[55px] md:leading-[67px] lg:leading-[81px] xl:leading-[101px] 
-                       text-[#000] 
-                       px-4"></Bracket>
+           <Bracket text="PROJECTS" className="tracking-[-4px] items-center justify-center md:mt-0  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[60px] sm:text-[120px] md:text-[150px] lg:text-[130px] leading-[0.9]  "></Bracket>
 
-        <div className="text-xs block md:hidden mt-2
+        {/* <div className="text-xs block md:hidden mt-2
                          tracking-tight 
                          text-center 
                          ">
            HERE IS THE LIST OF PROJECTS, <br/> I HAVE CREATED SO FAR.
-          </div>
+          </div> */}
         <div className="w-full hidden   absolute bottom-0 
                        p-4 sm:p-6 md:p-8 lg:p-10 
                        right-0 sm:right-2 md:right-3 lg:right-5 

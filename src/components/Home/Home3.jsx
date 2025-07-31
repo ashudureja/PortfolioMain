@@ -5,7 +5,7 @@ import Bracket from "../../Animations/Bracket";
 
 const Home3 = () => {
   return (
-    <div data-navbar-theme="dark" className="min-h-screen w-full text-[#EFEFEF] bg-[#111111] flex flex-col gap-6 sm:gap-8 md:gap-10 items-center justify-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-26">
+    <div data-navbar-theme="dark" className="md:min-h-screen w-full  text-[#EFEFEF] bg-[#111111] flex flex-col gap-6 sm:gap-8 md:gap-10 items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-12 lg:py-26">
       {/* Technology label */}
       {/* <div className="font-[figtree] text-[12px] sm:text-[14px] md:text-[16px] font-light">
         (TECHNOLOGY)
@@ -25,14 +25,12 @@ const Home3 = () => {
   and I plan to further  develop and <br /> refine these skills.
 </p>
 <p className="text-[#efefef] mb-2 sm:mb-4 whitespace-nowrap md:hidden block">
-  I am currently continuing my studies,  
-  <br />
-  focusing on technologies that enhance <br /> web-based  expression.
-  
-  I’m skilled in React,<br />  JavaScript,Tailwind CSS, and various  <br/> other tools,  
-  
-  and I plan to further <br/>  develop and refine these skills.
+  I'm continuing my studies, focusing on <br /> web-based expression.
+  Skilled in <br />  React, JavaScript , Tailwind CSS<br />
+  and other tools.
+ 
 </p>
+
 
        </Copy>
       </div>
