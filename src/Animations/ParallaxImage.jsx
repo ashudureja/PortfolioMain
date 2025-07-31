@@ -1,7 +1,21 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 
 const lerp = (start, end, factor) => start + (end - start) * factor;
+
+// Throttle function to limit scroll event frequency
+const throttle = (func, limit) => {
+  let inThrottle;
+  return function() {
+    const args = arguments;
+    const context = this;
+    if (!inThrottle) {
+      func.apply(context, args);
+      inThrottle = true;
+      setTimeout(() => inThrottle = false, limit);
+    }
+  };
+};
 
 const ParallaxImage = ({ src, alt, speed = 0.45, className }) => {
   const imageRef = useRef(null);
@@ -9,6 +23,7 @@ const ParallaxImage = ({ src, alt, speed = 0.45, className }) => {
   const currentTranslateY = useRef(0);
   const targetTranslateY = useRef(0);
   const rafId = useRef(null);
+  const isAnimating = useRef(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -36,11 +51,35 @@ const ParallaxImage = ({ src, alt, speed = 0.45, className }) => {
       }
     };
 
-    updateBounds();
-    window.addEventListener("resize", updateBounds);
+    const animate = () => {
+      if (!imageRef.current || !bounds.current) {
+        isAnimating.current = false;
+        return;
+      }
+
+      currentTranslateY.current = lerp(
+        currentTranslateY.current,
+        targetTranslateY.current,
+        0.1
+      );
+
+      const diff = Math.abs(currentTranslateY.current - targetTranslateY.current);
+      
+      if (diff > 0.01) {
+        imageRef.current.style.transform = `translateY(${currentTranslateY.current}px) scale(1.3)`;
+        rafId.current = requestAnimationFrame(animate);
+      } else {
+        // Stop animation when close enough to target
+        isAnimating.current = false;
+        if (rafId.current) {
+          cancelAnimationFrame(rafId.current);
+          rafId.current = null;
+        }
+      }
+    };
 
     const onScroll = () => {
-      if (!bounds.current) return;
+      if (!bounds.current || !imageRef.current) return;
 
       const windowHeight = window.innerHeight;
       const scrollY = window.scrollY;
@@ -49,34 +88,30 @@ const ParallaxImage = ({ src, alt, speed = 0.45, className }) => {
       const distanceFromCenter = windowMiddle - elementMiddle;
 
       targetTranslateY.current = distanceFromCenter * speed;
-    };
-
-    window.addEventListener("scroll", onScroll);
-    onScroll(); // call once to initialize
-
-    const animate = () => {
-      if (imageRef.current && bounds.current) {
-        currentTranslateY.current = lerp(
-          currentTranslateY.current,
-          targetTranslateY.current,
-          0.1
-        );
-
-        if (
-          Math.abs(currentTranslateY.current - targetTranslateY.current) > 0.01
-        ) {
-          imageRef.current.style.transform = `translateY(${currentTranslateY.current}px) scale(1.3)`;
-        }
+      
+      // Start animation loop only if not already running
+      if (!isAnimating.current) {
+        isAnimating.current = true;
+        animate();
       }
-      rafId.current = requestAnimationFrame(animate);
     };
 
-    animate();
+    updateBounds();
+    window.addEventListener("resize", updateBounds);
+
+    // Throttle scroll events to improve performance
+    const throttledScroll = throttle(onScroll, 16); // ~60fps
+    window.addEventListener("scroll", throttledScroll, { passive: true });
+    onScroll(); // call once to initialize
 
     return () => {
       window.removeEventListener("resize", updateBounds);
-      window.removeEventListener("scroll", onScroll);
-      if (rafId.current) cancelAnimationFrame(rafId.current);
+      window.removeEventListener("scroll", throttledScroll);
+      if (rafId.current) {
+        cancelAnimationFrame(rafId.current);
+        rafId.current = null;
+      }
+      isAnimating.current = false;
     };
   }, [isDesktop, speed]);
 
