@@ -8,7 +8,8 @@ const About4 = () => {
                     p-4 sm:p-6 md:p-8 lg:p-10'>
       
       <div className='inset-0 absolute z-[-10]'>
-        <ParallaxImage className="" src="./images/education.jpg"></ParallaxImage>
+        <ParallaxImage className="hidden md:block" src="./images/education.jpg"></ParallaxImage>
+        <img className='block md:hidden' src="./images/education.jpg"></img>
       </div>
       
       <div className='absolute z-[-1] bg-black/10 inset-0'></div>

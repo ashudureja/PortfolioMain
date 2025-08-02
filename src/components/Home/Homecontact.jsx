@@ -3,12 +3,14 @@ import ParallaxImage from '../../Animations/ParallaxImage'
 import { Instagram, Facebook, X, Linkedin, Youtube ,Github} from "lucide-react";
 import Copy from '../../Animations/Copy';
 import Bracket from '../../Animations/Bracket';
+import { Link } from 'react-router-dom';
 
 const Homecontact = () => {
   return (
     <div data-navbar-theme="dark" className='h-screen sm:h-[900px] md:h-[1000px] flex flex-col justify-center items-center relative w-full p-4 sm:p-6 md:p-8 lg:p-10'>
       <div className='inset-0 absolute z-[-10]'>
-        <ParallaxImage className="" src="./images/contactbg.webp"></ParallaxImage>
+        <ParallaxImage className="hidden md:block" src="./images/contactbg.webp"></ParallaxImage>
+        <img className='block md:hidden' src="./images/contactbg.webp"></img>
       </div>
       <div className='absolute z-[-1] bg-black/35 inset-0'></div>
       
@@ -49,12 +51,13 @@ const Homecontact = () => {
          
         </div>
         
-        <div className='font-[figtree] 
+        <Link to="/contact" className='font-[figtree] 
                        text-base sm:text-lg md:text-xl 
+                       mouse-pointer
                       
                        text-center'>
           (CONTACT ME)
-        </div>
+        </Link>
 
         {/* <Bracket text="CONTACT ME"  className='font-[figtree] 
                        text-base sm:text-lg md:text-xl 

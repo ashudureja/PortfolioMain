@@ -1,5 +1,5 @@
 import React from "react";
-import { Instagram, Facebook, X, Linkedin, Youtube } from "lucide-react";
+import { Instagram, Github, X, Linkedin } from "lucide-react";
 import Bracket from "../Animations/Bracket";
 
 // Placeholder for the Bracket component since its code was not provided.
@@ -109,12 +109,21 @@ const Contact = () => {
             <div className="bg-black/20 h-[1px] w-full mb-2"></div>
             
             <div className="flex space-x-2 sm:space-x-4 mt-4">
-              <IconWrapper><Instagram className="w-4 h-4" /></IconWrapper>
-              <IconWrapper><Facebook className="w-4 h-4" /></IconWrapper>
-              <IconWrapper><X className="w-4 h-4" /></IconWrapper>
-              <IconWrapper><Linkedin className="w-4 h-4" /></IconWrapper>
-              
-            </div>
+               <a href="https://www.linkedin.com/in/ashutosh-dureja-919072209/" target="_blank" rel="noopener noreferrer">
+    <IconWrapper><Linkedin className="w-4 h-4" /></IconWrapper>
+  </a>
+   <a href="https://github.com/ashudureja?tab=overview&from=2025-06-01&to=2025-06-30" target="_blank" rel="noopener noreferrer">
+    <IconWrapper><Github className="w-4 h-4" /></IconWrapper>
+  </a>
+  <a href="https://www.instagram.com/ashudureja_/" target="_blank" rel="noopener noreferrer">
+    <IconWrapper><Instagram className="w-4 h-4" /></IconWrapper>
+  </a>
+ 
+  <a href="https://www.linkedin.com/in/ashutosh-dureja-919072209/" target="_blank" rel="noopener noreferrer">
+    <IconWrapper><X className="w-4 h-4" /></IconWrapper>
+  </a>
+ 
+</div>
           </div>
         </div>
       </div>
