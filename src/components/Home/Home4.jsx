@@ -11,11 +11,12 @@ const Home4 = () => {
   const projects = [
     
     
-    { id: 4, image: "./projects/p5.png", title: "Gradly", description: "Brand identity system" ,to:"https://ashu-screenshots-gradient.netlify.app"},
-    { id: 5, image: "./projects/p1.png", title: "Minimal Ecommerce", description: "Motion graphics reel",to:"https://ashu-ecommerce.netlify.app/" },
-    { id: 3, image: "./projects/p7.png", title: " AI Trainer", description: "Interactive experience",to:"https://ashu-ai-trainer.netlify.app" },
+    { id: 4, image: "./projects/gd1.png", title: "Gradly", description: "Brand identity system" ,to:"https://ashu-screenshots-gradient.netlify.app"},
+   
+    { id: 3, image: "./projects/at3.png", title: " AI Trainer", description: "Interactive experience",to:"https://ashu-ai-trainer.netlify.app" },
+     { id: 5, image: "./projects/mc2.png", title: "Minimal Ecommerce", description: "Motion graphics reel",to:"https://ashu-ecommerce.netlify.app/" },
     { id: 1, image: "./projects/p4.png", title: "Anime Hub", description: "Creative design showcase",to:"https://animehub12.netlify.app" },
-    { id: 2, image: "./projects/p2.png", title: "Pokedex", description: "Digital art collection",to:"https://pokedoxmaster.netlify.app" },
+    { id: 2, image: "./projects/pk4.png", title: "Pokedex", description: "Digital art collection",to:"https://pokedoxmaster.netlify.app" },
   ]
 
   useEffect(() => {
@@ -80,9 +81,9 @@ const Home4 = () => {
           <img 
             src={projects[0].image} 
             alt={projects[0].title}
-            className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
+            className='w-full h-full object-cover transition-transform duration-500 '
           />
-          <div className='absolute inset-0 bg-black opacity-25 group-hover:opacity-10 transition-all duration-500'></div>
+          <div className='absolute inset-0 bg-black opacity-15 group-hover:opacity-35 transition-all duration-500'></div>
           <div className='absolute bottom-4 left-4 transition-opacity duration-500'>
             <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[0].title}</div>
           </div>
@@ -99,9 +100,9 @@ const Home4 = () => {
           <img 
             src={projects[1].image} 
             alt={projects[1].title}
-            className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
+            className='w-full h-full object-cover transition-transform duration-500 '
           />
-          <div className='absolute inset-0 bg-black opacity-25 group-hover:opacity-10 transition-all duration-500'></div>
+          <div className='absolute inset-0 bg-black opacity-15 group-hover:opacity-30 transition-all duration-500'></div>
           <div className='absolute bottom-4 left-4 transition-opacity duration-500'>
             <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[1].title}</div>
           </div>
@@ -118,9 +119,9 @@ const Home4 = () => {
           <img 
             src={projects[2].image} 
             alt={projects[2].title}
-            className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
+            className='w-full h-full object-cover transition-transform duration-500 '
           />
-          <div className='absolute inset-0 bg-black opacity-20 group-hover:opacity-10 transition-all duration-500'></div>
+          <div className='absolute inset-0 bg-black opacity-10 group-hover:opacity-35 transition-all duration-500'></div>
           <div className='absolute bottom-4 left-4 transition-opacity duration-500'>
             <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl '>{projects[2].title}</div>
           </div>
@@ -137,9 +138,9 @@ const Home4 = () => {
           <img 
             src={projects[3].image} 
             alt={projects[3].title}
-            className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
+            className='w-full h-full object-cover transition-transform duration-500 '
           />
-          <div className='absolute inset-0 bg-black opacity-20 group-hover:opacity-10 transition-all duration-500'></div>
+          <div className='absolute inset-0 bg-black opacity-15 group-hover:opacity-40 transition-all duration-500'></div>
           <div className='absolute bottom-4 left-4 transition-opacity duration-500'>
             <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[3].title}</div>
           </div>
@@ -156,9 +157,9 @@ const Home4 = () => {
           <img 
             src={projects[4].image} 
             alt={projects[4].title}
-            className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
+            className='w-full h-full object-cover transition-transform duration-500 '
           />
-          <div className='absolute inset-0 bg-black opacity-20 group-hover:opacity-10 transition-all duration-500'></div>
+          <div className='absolute inset-0 bg-black opacity-15 group-hover:opacity-50 transition-all duration-500'></div>
           <div className='absolute bottom-4 left-4 transition-opacity duration-500'>
             <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{projects[4].title}</div>
           </div>
@@ -179,7 +180,7 @@ const Home4 = () => {
             <img 
               src={project.image} 
               alt={project.title}
-              className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
+              className='w-full h-full object-cover transition-transform duration-500 '
             />
             <div className='absolute inset-0 bg-black opacity-25 group-hover:opacity-10 transition-all duration-500'></div>
             <div className='absolute bottom-3 left-3 '>
