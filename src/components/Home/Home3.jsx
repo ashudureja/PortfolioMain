@@ -7,7 +7,7 @@ const Home3 = () => {
   return (
     <div
       data-navbar-theme="dark"
-      className="md:min-h-screen h-[90vh] w-full  text-[#EFEFEF] bg-[#111111] flex flex-col gap-6 sm:gap-8 md:gap-10 items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-12 lg:py-26"
+      className=" h-[90vh] md:h-[130vh]  w-full  text-[#EFEFEF] bg-[#111111] flex flex-col gap-6 sm:gap-8 md:gap-10 items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-12 lg:py-26"
     >
       {/* Technology label */}
 
@@ -16,7 +16,7 @@ const Home3 = () => {
         (TECHNOLOGY)
       </div> */}
 
-      
+
 
 
 

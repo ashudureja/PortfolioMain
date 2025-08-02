@@ -10,7 +10,8 @@ const Home2 = () => {
       className="h-screen   md:h-[120vh] flex flex-col justify-between relative w-full p-4 sm:p-6 md:p-8 lg:p-10"
     >
       <div className="inset-0 absolute z-[-10]">
-        <ParallaxImage speed={0.4} className="" src="./images/aboutbg3.png"></ParallaxImage>
+        <ParallaxImage speed={0.4} className="hidden md:block" src="./images/aboutbg3.png"></ParallaxImage>
+        <img className="block md:hidden" src="./images/aboutbg3.png" ></img>
       </div>
       
       

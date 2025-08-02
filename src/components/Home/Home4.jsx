@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Bracket from '../../Animations/Bracket'
+import { Link } from 'react-router-dom'
 
 const Home4 = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
@@ -182,9 +183,9 @@ const Home4 = () => {
               alt={project.title}
               className='w-full h-full object-cover transition-transform duration-500 '
             />
-            <div className='absolute inset-0 bg-black opacity-25 group-hover:opacity-10 transition-all duration-500'></div>
+            <div className='absolute inset-0 bg-black opacity-17 group-hover:opacity-10 transition-all duration-500'></div>
             <div className='absolute bottom-3 left-3 '>
-              <div className='text-white uppercase font-[lato] font-light text-lg lg:text-2xl'>{project.title}</div>
+              <div className='text-white uppercase font-[lato] font-light text-sm lg:text-2xl'>{project.title}</div>
             </div>
           </a>
         ))}
@@ -200,15 +201,15 @@ const Home4 = () => {
             willChange: 'transform',
           }}
         >
-          <div className='inline-block bg-white text-black bg-opacity-10 px-3 py-2 rounded text-xs border border-gray-600 backdrop-blur-sm'>
+          <div className='inline-block z-[999] bg-white text-black  px-3 py-2 rounded text-xs '>
             (VIEW LIVE)
           </div>
         </div>
       )}
 
-      {/* <div className='font-[figtree] text-sm sm:text-base md:text-[16px] w-full text-center mt-8 sm:mt-10 md:mt-14 pb-8 sm:pb-10 md:pb-12'>(ALL PROJECTS)</div> */}
-    
-        <Bracket text="ALL PROJECTS" className="font-[figtree] items-center justify-center text-sm sm:text-base md:text-[16px] w-full text-center mt-8 sm:mt-10 md:mt-14 pb-8 sm:pb-10 md:pb-12"></Bracket>
+     
+       <Link to="/projects">
+        <Bracket text="ALL PROJECTS" className="font-[figtree] items-center justify-center text-sm sm:text-base md:text-[16px] w-full text-center mt-8 sm:mt-10 md:mt-14 pb-8 sm:pb-10 md:pb-12"></Bracket></Link>
  
     </div>
   )

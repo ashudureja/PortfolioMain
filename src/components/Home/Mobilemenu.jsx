@@ -196,7 +196,7 @@ const Mobilemenu = () => {
           <>
             {/* Enhanced Background Overlay */}
             <motion.div
-              className="fixed inset-0 bg-black/40 z-40"
+              className="fixed inset-0 bg-black/40 z-40 block md:hidden"
               variants={overlayVariants}
               initial="hidden"
               animate="visible"
@@ -205,7 +205,7 @@ const Mobilemenu = () => {
             />
             
             {/* Elegant Menu Content */}
-            <div className="fixed inset-0 z-50 flex items-end justify-center pb-20 p-4 pointer-events-none">
+            <div className="fixed inset-0 z-50 flex  md:hidden items-end justify-center pb-20 p-4 pointer-events-none">
               <motion.div
                 className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white w-72 h-80 flex flex-col items-center justify-between py-8 px-10 rounded-2xl shadow-2xl backdrop-blur-xl border border-white/10 pointer-events-auto"
                 variants={menuVariants}
@@ -299,7 +299,7 @@ const Mobilemenu = () => {
       </AnimatePresence>
 
       {/* Enhanced Menu Trigger Button */}
-      <div className="fixed block md:hidden z-30 bottom-6 w-full items-center justify-center flex flex-col">
+      <div className="fixed  md:hidden z-30 bottom-6 w-full items-center justify-center flex flex-col">
         <motion.button
           className="bg-gradient-to-r from-gray-900 to-black text-white rounded-full py-3 px-10 cursor-pointer border border-white/20 backdrop-blur-sm shadow-lg"
           onClick={toggleMenu}

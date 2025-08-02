@@ -25,7 +25,7 @@ const Main = () => {
             </div>
             
             <div className="flex flex-col text-[12px]  leading-[14.8px] w-full text-center md:text-left  uppercase md:max-w-[300px] ">
-              <div>I started working as frontend engineer.</div>
+              <div>LEARNING WEB DEVELOPMENT SINCE 2024.</div>
               <div>I take pride in this role.</div>
             </div> 
           </div>

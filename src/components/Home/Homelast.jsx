@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Homelast = ({ page }) => {
   return (
     <div
-      className="h-screen relative z-[999] w-full 
+      className="h-screen  w-full 
                     px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[40px] 
                     py-4 sm:py-5 md:py-[20px] 
                     flex flex-col justify-between 
@@ -27,7 +27,7 @@ const Homelast = ({ page }) => {
             <Bracket
               text="NEXT"
               className="items-center justify-center font-[figtree]
-      text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px]
+      text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[64px]
       leading-tight sm:leading-[44px] md:leading-[54px] lg:leading-[64px] xl:leading-[74px]
       text-[#000]
       px-4"

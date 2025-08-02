@@ -220,7 +220,7 @@ const Project = () => {
                     className="w-full flex flex-col cursor-pointer group"
                     onClick={() => navigateTo(`/editorial/${generateSlug(article.title)}`)}
                   >
-                    <div>{article.id}</div>
+                    <div className="mb-2">{`(${article.id})`}</div>
                     
                     <div className="w-full mb-2 sm:mb-3 md:mb-4 overflow-hidden relative
                       h-[36vh] md:h-[85vh]
@@ -241,16 +241,13 @@ const Project = () => {
                     
                
                     <div className="flex justify-between items-start sm:items-center flex-col sm:flex-row gap-2 sm:gap-0">
-                      <div className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 
+                      <div className="text-base uppercase sm:text-lg md:text-xl lg:text-lg xl:text-xl 
                         font-medium text-black group-hover:text-gray-700 transition-colors duration-300
                         leading-tight sm:leading-normal">
                         {article.title}
                       </div>
                    
-                      <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-600 sm:hidden">
-                        <span>REACT</span>
-                        
-                      </div>
+                     
                     </div>
                   </div>
                 )}
@@ -267,7 +264,7 @@ const Project = () => {
             willChange: 'transform',
           }}
         >
-          <div className='inline-block bg-white text-black bg-opacity-10 px-3 py-2 rounded text-xs  backdrop-blur-sm'>
+          <div className='inline-block bg-white text-black  px-3 py-2 rounded text-xs  backdrop-blur-sm'>
             (VIEW LIVE)
           </div>
         </div>

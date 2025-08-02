@@ -11,9 +11,10 @@ const Home5 = () => {
     <div data-navbar-theme="dark" className="min-h-screen w-full text-[#EFEFEF] bg-[#111111] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-20 sm:pt-24 md:pt-32 lg:pt-40">
      <div className="max-w-8xl mx-auto">
       <motion.div
-        className="h-[1px] bg-gray-200 rounded-full"
-        initial={{ width: 0 }}
-        whileInView={{ width: "100%" }}
+        className="h-[1px] w-full bg-gray-200 rounded-full "
+        style={{transformOrigin:"center"}}
+        initial={{ scaleX: 0 }}
+  whileInView={{ scaleX: 1 }}
         transition={{
           duration: 1,
           delay: 0.1,
