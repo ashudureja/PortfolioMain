@@ -4,16 +4,19 @@ import Bracket from "../../Animations/Bracket";
 
 const Main = () => {
   return (
-    <div data-navbar-theme="light" className="min-h-screen w-full bg-[#efefef] px-4 md:px-0 md:pl-[14px]">
+    <div data-navbar-theme="light" className="h-screen w-full bg-[#efefef] px-4 md:px-0 md:pl-[14px]">
       <div className="flex flex-col md:grid md:grid-cols-2 max-w-8xl mx-auto">
-        {/* Left Column - Content */}
+        
         <div className="md:col-span-1 flex flex-col justify-between  md:pt-0">
+
           <div>
-            {/* <div className="tracking-[-4px] mt-20 sm:mt-25 md:mt-20  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[80px] sm:text-[120px] md:text-[150px] lg:text-[206px] leading-[0.9]">
-              (ASHU)
-            </div> */}
-            <Bracket text="ASHU" className="tracking-[-4px] mt-20 sm:mt-25 md:mt-20  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[80px] sm:text-[120px] md:text-[150px] lg:text-[206px] leading-[0.9] items-center justify-center md:items-start md:justify-start"></Bracket>
+            
+            <Bracket text="ASHU" className="tracking-[-4px] mt-15 sm:mt-25 md:mt-20  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[80px] sm:text-[120px] md:text-[150px] lg:text-[206px] leading-[0.9] items-center justify-center md:items-start md:justify-start"></Bracket>
           </div>
+           <div className="text-center mt-4 text-xs">FRONTEND DEVELOPER</div>
+
+
+          
           
           <div className="hidden flex-row md:flex items-start gap-6 md:items-center mb-7 md:gap-40 mt-10 md:mt-0">
             <div className=" hidden md:flex flex-col">
@@ -36,7 +39,9 @@ const Main = () => {
             alt="Ashu"
           />
         </div>
+        
       </div>
+      
     </div>
   );
 };

@@ -7,7 +7,7 @@ const About1 = () => {
                     px-4 sm:px-6 md:px-8 lg:px-10 
                     relative flex items-center justify-center">
       
-      <div className="w-full mt-8  sm:mt-8 md:mt-10">
+      <div className="w-full mt-4  sm:mt-8 md:mt-10">
         
        <Bracket text="ABOUT" className="tracking-[-4px] items-center justify-center md:mt-0  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[70px] sm:text-[120px] md:text-[150px] lg:text-[160px] leading-[0.9]  "></Bracket>
 

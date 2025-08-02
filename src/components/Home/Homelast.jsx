@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Homelast = ({ page }) => {
   return (
     <div
-      className="h-screen w-full 
+      className="h-screen relative z-[999] w-full 
                     px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[40px] 
                     py-4 sm:py-5 md:py-[20px] 
                     flex flex-col justify-between 

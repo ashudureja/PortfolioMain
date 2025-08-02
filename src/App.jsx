@@ -9,6 +9,7 @@ import Project from './pages/editorial/page';
 import Navbar from './components/Home/Navbar';
 import Contact from './pages/Contact';
 import Contact2 from './pages/Contact2';
+import Mobilemenu from './components/Home/Mobilemenu';
 
 const App = () => {
   
@@ -41,7 +42,8 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar classname="hidden md:block"/>
+      <Mobilemenu classname="block md:hidden"/>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<MotionWrapper><Home /></MotionWrapper>} />

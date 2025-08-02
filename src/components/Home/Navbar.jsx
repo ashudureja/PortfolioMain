@@ -37,7 +37,7 @@ const Navbar = () => {
    
 
   return (
-    <div className='w-full fixed top-5 px-10' style={{ zIndex: 10, mixBlendMode: 'difference' }}>
+    <div className='w-full hidden md:block fixed top-5 px-10' style={{ zIndex: 10, mixBlendMode: 'difference' }}>
       <div className="text-white">
         <div className='flex justify-between items-center'>
           <div className='font-semibold'>logo</div>

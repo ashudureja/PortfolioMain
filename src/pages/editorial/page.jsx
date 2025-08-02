@@ -20,7 +20,7 @@ const Project = () => {
   const articles = [
     {
       id: 1,
-      image: "/projects/p1.png",
+      image: "/projects/gd1.png",
       alt: "AI Voices Ba",
       date: "6.19.2024",
       category: "https://ashu-screenshots-gradient.netlify.app",
@@ -28,7 +28,7 @@ const Project = () => {
     },
     {
       id: 2,
-      image: "/projects/p3.png",
+      image: "/projects/at3.png",
       alt: "AI Ethics Discussion",
       date: "6.19.2024",
       category: "https://ashu-ai-trainer.netlify.app",
@@ -36,7 +36,7 @@ const Project = () => {
     },
     {
       id: 3,
-     image: "/projects/p3.png",
+     image: "/projects/mc2.png",
       alt: "Artists' Rights",
       date: "6.19.2024",
       category: "https://ashu-ecommerce.netlify.app",
@@ -84,7 +84,7 @@ const Project = () => {
     },
     {
       id: 9,
-     image: "/projects/p5.png",
+     image: "/projects/algora.png",
       alt: "Policy Reforms",
       date: "6.19.2024",
       category: "https://ashu-ai.netlify.app",
@@ -92,7 +92,7 @@ const Project = () => {
     },
     {
       id: 10,
-     image: "/projects/p7.png",
+     image: "/projects/algora.png",
       alt: "Future of AI",
       date: "6.19.2024",
       category: "https://shirtthreed.netlify.app",
@@ -220,6 +220,7 @@ const Project = () => {
                     className="w-full flex flex-col cursor-pointer group"
                     onClick={() => navigateTo(`/editorial/${generateSlug(article.title)}`)}
                   >
+                    <div>{article.id}</div>
                     
                     <div className="w-full mb-2 sm:mb-3 md:mb-4 overflow-hidden relative
                       h-[36vh] md:h-[85vh]
@@ -235,7 +236,7 @@ const Project = () => {
                         alt={article.title}
                         className="w-full h-full object-cover "
                       />
-                      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+                      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-all duration-300"></div>
                     </div>
                     
                
