@@ -11,9 +11,9 @@ const Main = () => {
 
           <div>
             
-            <Bracket text="ASHU" className="tracking-[-4px] mt-15 sm:mt-25 md:mt-20  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[80px] sm:text-[120px] md:text-[150px] lg:text-[206px] leading-[0.9] items-center justify-center md:items-start md:justify-start"></Bracket>
+            <Bracket text="ASHU" className="tracking-[-4px] mt-12 sm:mt-25 md:mt-20  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[80px] sm:text-[120px] md:text-[150px] lg:text-[206px] leading-[0.9] items-center justify-center md:items-start md:justify-start"></Bracket>
           </div>
-           <div className="text-center mt-4 text-xs">FRONTEND DEVELOPER</div>
+           
 
 
           
@@ -32,7 +32,7 @@ const Main = () => {
         </div>
         
         {/* Right Column - Image */}
-        <div className="md:col-span-1 h-[65vh]  sm:mb-[14px] md:mb-0 md:h-[100vh] w-full mt-8 md:mt-0">
+        <div className="md:col-span-1 h-[75vh]  sm:mb-[14px] md:mb-0 md:h-[100vh] w-full mt-8 md:mt-0">
           <img 
             className="w-full h-full object-cover object-center" 
             src="./images/ashu2.jpg" 
