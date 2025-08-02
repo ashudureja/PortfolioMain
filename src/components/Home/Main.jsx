@@ -11,7 +11,7 @@ const Main = () => {
 
           <div>
             
-            <Bracket text="ASHU" className="tracking-[-4px] mt-12 sm:mt-25 md:mt-20  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[21vw] sm:text-[120px] md:text-[14vw] lg:text-[14vw] leading-[0.9] items-center justify-center md:items-start md:justify-start"></Bracket>
+            <Bracket text="ASHU" className="tracking-[-4px] mt-12 sm:mt-25 md:mt-20  md:tracking-[-9px] text-center md:text-left font-[figtree] text-[20vw] sm:text-[120px] md:text-[14vw] lg:text-[14vw] leading-[0.9] items-center justify-center md:items-start md:justify-start"></Bracket>
           </div>
            
 

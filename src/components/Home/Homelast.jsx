@@ -1,11 +1,13 @@
 import React from "react";
 import Bracket from "../../Animations/Bracket";
 import { Link } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 const Homelast = ({ page }) => {
+ 
   return (
     <div
-      className="h-screen  w-full 
+      className="h-screen  w-full relative z-50
                     px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[40px] 
                     py-4 sm:py-5 md:py-[20px] 
                     flex flex-col justify-between 

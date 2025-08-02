@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate, useLocation } from "react-router-dom";
+import { GiWhirlpoolShuriken } from "react-icons/gi";
 
 const Navbar = () => {
   const navItems = ['HOME', 'ABOUT', 'PROJECTS', 'CONTACT'];
   const [scrollPercent, setScrollPercent] = useState(0);
-    const location = useLocation();
-   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
+   
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
@@ -40,7 +38,8 @@ const Navbar = () => {
     <div className='w-full hidden md:block fixed top-5 px-10' style={{ zIndex: 10, mixBlendMode: 'difference' }}>
       <div className="text-white">
         <div className='flex justify-between items-center'>
-          <div className='font-semibold'>logo</div>
+       <GiWhirlpoolShuriken className='text-xl transition-transform ease-linear' style={{ rotate: `${(scrollPercent / 100) * 360}deg` }} />
+
           <div className='flex items-center justify-center gap-[36px] nav'>
             {navItems.map((item) => (
               <Link

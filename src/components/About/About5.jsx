@@ -23,7 +23,7 @@ const About5 = () => {
   ]
 
   return (
-    <div className='bg-[#efefef]  w-full pt-5'>
+    <div className='bg-[#efefef]  w-full pt-5 md:-mb-[27px] -mb-[28px]'>
       {tools.map((tool, index) => (
         <div key={index} className=' w-full  h-20 flex flex-col'>
           <div className='flex px-4 md:px-6 justify-between w-full items-center text-[18px] md:text-[24px]  font-[lato] text-[#000]'>

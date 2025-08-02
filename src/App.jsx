@@ -14,6 +14,10 @@ import Mobilemenu from './components/Home/Mobilemenu';
 const App = () => {
   
   const location = useLocation();
+   
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   // Optional: Initialize LocomotiveScroll once
   useEffect(() => {
